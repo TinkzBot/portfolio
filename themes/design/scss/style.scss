@@ -1,0 +1,90 @@
+// import normalize
+@import "../../node_modules/normalize.css/normalize";
+
+// scss modules:
+@import "variables";
+@import "blockquotes";
+@import "code";
+
+// fontawesome modules
+@import "../../shared/fontawesome/scss/fontawesome";
+$fa-font-path: "../../shared/fontawesome/webfonts";
+@import "../../shared/fontawesome/scss/brands";
+@import "../../shared/fontawesome/scss/solid";
+@import "../../shared/fontawesome/scss/regular";
+
+// Other Modules:
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+
+// Whole page
+* {
+	color: $font-color;
+	font-family: $font;
+	max-width: 100%;
+}
+
+html {
+	overflow-y: scroll;
+}
+
+body {
+	background-color: $background-color;
+}
+
+// Header
+.site-header {
+	text-align: center;
+}
+
+// Main content
+.main {
+	margin: $padding;
+	text-align: center;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+code {
+	color: #000;
+	word-break: break-all;
+}
+
+// Navigation
+
+.nav {
+	border-bottom: solid 2px black;
+}
+
+.nav ul li {
+	align-items: center;
+	padding: $padding;
+}
+
+.nav ul li a {
+	color: $font-color;
+}
+
+// Footer
+.footer {
+	padding: $padding * 3;
+	color: background-footer;
+	border-top: solid 2px rgb(34, 22, 22);
+}
+
+.social {
+	float: right;
+	padding-right: 1em;
+}
+
+.amazon {
+	float: right;
+	padding-right: 1em;
+}
+
+.google {
+	float: right;
+	padding-right: 1em;
+}

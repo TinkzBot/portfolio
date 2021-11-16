@@ -1,0 +1,33 @@
+<div class="footer">
+    <div style="float:left;">
+
+    </div>
+    <div class="social">
+        {% for social in pages["_meta"].meta.social %}
+            <a href="{{ social.url }}" title="{{ social.title }}" role="button" target="_blank">
+                <i class="{{ social.icon }}" aria-hidden="true"></i>
+                <span class="sr-only">{{ social.title }}</span>
+            </a>
+        {% endfor %}
+    </div>
+    <div class="google">
+        {% for google in pages["_meta"].meta.google %}
+            <a href="{{ google.url }}" title="{{ google.title }}" role="button" target="_blank">
+                <i class="{{ google.icon }}" aria-hidden="true"></i>
+                <span class="sr-only">{{ google.title }}</span>
+            </a>
+        {% endfor %}
+    </div>
+    <div class="amazon">
+        {% for amazon in pages["_meta"].meta.amazon %}
+            <a href="{{ amazon.url }}" title="{{ amazon.title }}" role="button" target="_blank">
+                <i class="{{ amazon.icon }}" aria-hidden="true"></i>
+                <span class="sr-only">{{ amazon.title }}</span>
+            </a>
+        {% endfor %}
+    </div>
+</div>
+
+<script src="{{ theme_url }}/../shared//js/modernizr-3.3.1-custom.min.js" type="text/javascript"></script>
+<script src="{{ theme_url }}/../shared//js/utils.js" type="text/javascript"></script>
+<script src="{{ theme_url }}/../shared//js/responsive-navbar.js" type="text/javascript"></script>

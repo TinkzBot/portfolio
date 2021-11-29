@@ -1,0 +1,65 @@
+/* report.scss */
+.landingpage {
+	display: grid;
+	gap: 1em 1em;
+}
+
+.landingpage h1 {
+	grid-column: span 3;
+	justify-self: center;
+}
+
+.technology {
+	padding: 1em;
+	border: 1em;
+	text-decoration: none;
+	font-size: 1.5em;
+	background-color: #333333;
+	background-image: linear-gradient(147deg, #cccccc 0%, #eeeeee 74%);
+	height: 5em;
+	color: rgb(0, 0, 0);
+	border: 1px solid block;
+	text-align: center;
+	justify-self: center;
+	margin: 2em;
+	box-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px, rgb(51, 51, 51) 0 0 0 3px;
+}
+
+.technology:hover {
+	box-shadow: rgba(50, 50, 93, 0.25) 0 30px 60px -12px inset,
+		rgba(0, 0, 0, 0.3) 0 18px 36px -18px inset;
+}
+
+@media (max-width: 1180px) {
+	.technology {
+		justify-content: stretch;
+	}
+}
+
+.technology-article {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+.technology-article .sidebar {
+	width: 30%;
+	text-align: right;
+	margin-right: 40px;
+}
+
+.technology-article .article {
+	width: auto;
+	margin-right: 20em;
+}
+
+.technology-article .sidebar ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+@media (max-width: 800px) {
+	.objekt {
+		grid-column: span 3;
+	}
+}
